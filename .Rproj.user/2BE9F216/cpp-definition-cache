@@ -1,0 +1,275 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_bicg.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_bicg(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_bicg#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#S0_#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_bicg.cpp",
+                "kind" : 6,
+                "line" : 116,
+                "name" : "single_bicg_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const arma::sp_mat)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_bicg_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1S0_#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_bicg.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_bicgstab.cpp",
+                "kind" : 6,
+                "line" : 14,
+                "name" : "single_bicgstab(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_bicgstab#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#S0_#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_bicgstab.cpp",
+                "kind" : 6,
+                "line" : 132,
+                "name" : "single_bicgstab_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const arma::sp_mat)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_bicgstab_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1S0_#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_bicgstab.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cg.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_cg(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_cg#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#S0_#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cg.cpp",
+                "kind" : 6,
+                "line" : 96,
+                "name" : "single_cg_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const arma::sp_mat)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_cg_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1S0_#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cg.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cgs.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_cgs(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_cgs#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#S0_#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cgs.cpp",
+                "kind" : 6,
+                "line" : 114,
+                "name" : "single_cgs_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const arma::sp_mat)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_cgs_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1S0_#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cgs.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cheby.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_cheby(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, arma::mat &, const double, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_cheby#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#&S1_#1d#1d#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cheby.cpp",
+                "kind" : 6,
+                "line" : 90,
+                "name" : "single_cheby_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, arma::sp_mat, const double, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_cheby_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#S0_#1d#1d#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_cheby.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_gmres.cpp",
+                "kind" : 6,
+                "line" : 8,
+                "name" : "rotmat(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@rotmat#d#d#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_gmres.cpp",
+                "kind" : 6,
+                "line" : 34,
+                "name" : "single_gmres(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, arma::mat &, const int)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_gmres#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#&S1_#1I#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_gmres.cpp",
+                "kind" : 6,
+                "line" : 160,
+                "name" : "single_gmres_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, arma::sp_mat, const int)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_gmres_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#S0_#1I#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_gmres.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_qmr.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_qmr(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_qmr#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#S0_#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_qmr.cpp",
+                "kind" : 6,
+                "line" : 190,
+                "name" : "single_qmr_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const arma::sp_mat, const arma::sp_mat, const arma::sp_mat)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_qmr_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1S0_#1S0_#1S0_#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/krylov_qmr.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_gs.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_gs(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const int)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_gs#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#1I#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_gs.cpp",
+                "kind" : 6,
+                "line" : 97,
+                "name" : "single_gs_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const int)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_gs_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1I#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/method_gs.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_jacobi.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_jacobi(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_jacobi#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#1d#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_jacobi.cpp",
+                "kind" : 6,
+                "line" : 71,
+                "name" : "single_jacobi_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_jacobi_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1d#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/method_jacobi.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_sor.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_sor(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_sor#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#1d#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_sor.cpp",
+                "kind" : 6,
+                "line" : 71,
+                "name" : "single_sor_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_sor_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1d#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/method_sor.cpp",
+        "file_last_write" : 1517822873
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_ssor.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "single_ssor(const arma::mat &, const arma::colvec &, arma::colvec &, const double, const int, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_ssor#&1$@N@arma@C@Mat>#d#&1$@N@arma@C@Col>#d#&S3_#1d#1I#1d#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/kisung/Desktop/Rlinsolve/src/method_ssor.cpp",
+                "kind" : 6,
+                "line" : 81,
+                "name" : "single_ssor_sparse(const arma::sp_mat, const arma::sp_mat, arma::colvec &, const double, const int, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@single_ssor_sparse#1$@N@arma@C@SpMat>#d#1S0_#&$@N@arma@C@Col>#d#1d#1I#1d#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/Rlinsolve/src/method_ssor.cpp",
+        "file_last_write" : 1517822873
+    }
+]

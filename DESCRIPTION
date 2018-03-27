@@ -1,0 +1,28 @@
+Package: Rlinsolve
+Type: Package
+Title: Iterative Solvers for (Sparse) Linear System of Equations
+Version: 0.2.0
+Authors@R: person("Kisung", "You", email = "kyou@nd.edu", role = c("aut", "cre"),comment=c(ORCID="0000-0002-8584-459X"))
+Description: Solving a system of linear equations is one of the most fundamental
+    computational problems for many fields of mathematical studies, such as
+    regression problems from statistics or numerical partial differential equations.
+    We provide basic stationary iterative solvers such as Jacobi, Gauss-Seidel,
+    Successive Over-Relaxation and SSOR methods. Nonstationary, also known as
+	Krylov subspace methods are also provided. Sparse matrix computation is also supported
+    in that solving large and sparse linear systems can be manageable using 'Matrix' package
+    along with 'RcppArmadillo'. For a more detailed description, see a book by Saad (2003)
+    <doi:10.1137/1.9780898718003>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.4), Matrix, Rdpack
+LinkingTo: bigmemory, BH, Rcpp, RcppArmadillo
+Depends: R (>= 3.3.0), bigmemory
+RoxygenNote: 6.0.1
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2018-02-05 09:27:53 UTC; kisung
+Author: Kisung You [aut, cre] (<https://orcid.org/0000-0002-8584-459X>)
+Maintainer: Kisung You <kyou@nd.edu>
+Repository: CRAN
+Date/Publication: 2018-02-12 16:12:49 UTC
