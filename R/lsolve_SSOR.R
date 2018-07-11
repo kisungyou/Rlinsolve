@@ -64,11 +64,15 @@ lsolve.ssor <- function(A,B,xinit=NA,reltol=1e-5,maxiter=1000,w=1,adjsym=TRUE,ve
     sparseflag = FALSE
   }
   # xinit
-  if (is.na(xinit)){
-    xinit = matrix(rnorm(ncol(A)))
+  if (length(xinit)==1){
+    if (is.na(xinit)){
+      xinit = matrix(rnorm(ncol(A)))
+    } else {
+      stop("* lsolve.ssor : please use a valid 'xinit'.")
+    }
   } else {
     if (length(xinit)!=ncol(A)){
-      stop("* lsolve.gs : 'xinit' has invalid size.")
+      stop("* lsolve.ssor : 'xinit' has invalid size.")
     }
     xinit = matrix(xinit)
   }

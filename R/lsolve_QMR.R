@@ -63,8 +63,12 @@ lsolve.qmr <- function(A,B,xinit=NA,reltol=1e-5,maxiter=1000,
     sparseflag = FALSE
   }
   # xinit
-  if (is.na(xinit)){
-    xinit = matrix(rnorm(ncol(A)))
+  if (length(xinit)==1){
+    if (is.na(xinit)){
+      xinit = matrix(rnorm(ncol(A)))
+    } else {
+      stop("* lsolve.qmr : please use a valid 'xinit'.")
+    }
   } else {
     if (length(xinit)!=ncol(A)){
       stop("* lsolve.qmr : 'xinit' has invalid size.")

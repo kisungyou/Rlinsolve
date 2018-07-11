@@ -68,8 +68,12 @@ lsolve.cg <- function(A,B,xinit=NA,reltol=1e-5,maxiter=10000,
     sparseflag = FALSE
   }
   # xinit
-  if (is.na(xinit)){
-    xinit = matrix(rnorm(ncol(A)))
+  if (length(xinit)==1){
+    if (is.na(xinit)){
+      xinit = matrix(rnorm(ncol(A)))
+    } else {
+      stop("* lsolve.cg : please use a valid 'xinit'.")
+    }
   } else {
     if (length(xinit)!=ncol(A)){
       stop("* lsolve.cg : 'xinit' has invalid size.")

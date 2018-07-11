@@ -65,11 +65,15 @@ lsolve.jacobi <- function(A,B,xinit=NA,reltol=1e-5,
     sparseflag = FALSE
   }
   # xinit
-  if (any(is.na(xinit))){
-    xinit = matrix(rnorm(ncol(A)))
+  if (length(xinit)==1){
+    if (is.na(xinit)){
+      xinit = matrix(rnorm(ncol(A)))
+    } else {
+      stop("* lsolve.jacobi : please use a valid 'xinit'.")
+    }
   } else {
     if (length(xinit)!=ncol(A)){
-      stop("* lsolve.jacobi : 'xinit' has invalid size.")
+      stop("* lsolve.jacobi: 'xinit' has invalid size.")
     }
     xinit = matrix(xinit)
   }

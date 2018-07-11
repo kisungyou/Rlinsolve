@@ -1,7 +1,7 @@
 Package: Rlinsolve
 Type: Package
 Title: Iterative Solvers for (Sparse) Linear System of Equations
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: person("Kisung", "You", email = "kyou@nd.edu", role = c("aut", "cre"),comment=c(ORCID="0000-0002-8584-459X"))
 Description: Solving a system of linear equations is one of the most fundamental
     computational problems for many fields of mathematical studies, such as

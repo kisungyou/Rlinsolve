@@ -65,14 +65,20 @@ lsolve.sor <- function(A,B,xinit=NA,reltol=1e-5,maxiter=1000,w=1,adjsym=TRUE,ver
     sparseflag = FALSE
   }
   # xinit
-  if (is.na(xinit)){
-    xinit = matrix(rnorm(ncol(A)))
+  if (length(xinit)==1){
+    if (is.na(xinit)){
+      xinit = matrix(rnorm(ncol(A)))
+    } else {
+      stop("* lsolve.sor : please use a valid 'xinit'.")
+    }
   } else {
     if (length(xinit)!=ncol(A)){
-      stop("* lsolve.gs : 'xinit' has invalid size.")
+      stop("* lsolve.sor : 'xinit' has invalid size.")
     }
     xinit = matrix(xinit)
   }
+  
+  
   # Preprocessing : symmetricity warning
   if (nrow(A)==ncol(A)){
     if (norm(abs(t(A)-A),"f")>1e-10){

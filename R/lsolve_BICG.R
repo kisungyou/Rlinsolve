@@ -67,14 +67,19 @@ lsolve.bicg <- function(A,B,xinit=NA,reltol=1e-5,maxiter=10000,
     sparseflag = FALSE
   }
   # xinit
-  if (is.na(xinit)){
-    xinit = matrix(rnorm(ncol(A)))
+  if (length(xinit)==1){
+    if (is.na(xinit)){
+      xinit = matrix(rnorm(ncol(A)))
+    } else {
+      stop("* lsolve.bicg: please use a valid 'xinit'.")
+    }
   } else {
     if (length(xinit)!=ncol(A)){
       stop("* lsolve.bicg : 'xinit' has invalid size.")
     }
     xinit = matrix(xinit)
   }
+  
   ###########################################################################
   # Step 1. Preprocessing
   # 1-1. Neither NA nor Inf allowed.

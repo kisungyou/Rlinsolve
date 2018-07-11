@@ -66,14 +66,19 @@ lsolve.gmres <- function(A,B,xinit=NA,reltol=1e-5,maxiter=1000,
     sparseflag = FALSE
   }
   # xinit
-  if (is.na(xinit)){
-    xinit = matrix(rnorm(ncol(A)))
+  if (length(xinit)==1){
+    if (is.na(xinit)){
+      xinit = matrix(rnorm(ncol(A)))
+    } else {
+      stop("* lsolve.gmres : please use a valid 'xinit'.")
+    }
   } else {
     if (length(xinit)!=ncol(A)){
       stop("* lsolve.gmres : 'xinit' has invalid size.")
     }
     xinit = matrix(xinit)
   }
+  
   if ((restart<2)||(is.na(restart))||(is.infinite(restart))||(abs(restart-round(restart))>sqrt(.Machine$double.eps))){
     stop("* lsolve.gmres : 'restart' should be a positive integer >= 2.")
   }
