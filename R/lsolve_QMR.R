@@ -19,6 +19,7 @@
 #' }
 #'
 #' @examples
+#' \dontrun{
 #' ## Overdetermined System
 #' A = matrix(rnorm(10*5),nrow=10)
 #' x = rnorm(5)
@@ -30,6 +31,7 @@
 #' matout = cbind(matrix(x),out1$x, out2$x, out3$x);
 #' colnames(matout) = c("true x","CG result", "BiCG result", "QMR result")
 #' print(matout)
+#' }
 #'
 #' @references
 #' \insertRef{freund_qmr:_1991}{Rlinsolve}

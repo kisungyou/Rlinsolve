@@ -1,7 +1,7 @@
 Package: Rlinsolve
 Type: Package
 Title: Iterative Solvers for (Sparse) Linear System of Equations
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: person("Kisung", "You", email = "kyou@nd.edu", role = c("aut", "cre"), comment=c(ORCID="0000-0002-8584-459X"))
 Description: Solving a system of linear equations is one of the most fundamental
     computational problems for many fields of mathematical studies, such as
@@ -15,7 +15,7 @@ Description: Solving a system of linear equations is one of the most fundamental
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-Imports: Rcpp (>= 0.12.4), Matrix, Rdpack
+Imports: Rcpp (>= 0.12.4), Matrix, Rdpack, utils
 LinkingTo: bigmemory, BH, Rcpp, RcppArmadillo
 Depends: R (>= 3.3.0), bigmemory
 RoxygenNote: 6.0.1

@@ -51,10 +51,12 @@
 #' @references Barrett, R., Berry, M., Chan, T.F., Demmel, J., Donato, J., Dongarra, J.,
 #' Eijkhout, V., Pozo, R., Romine, C., and van der Vorst, H. (1994) \emph{Templates for the Solution
 #' of Linear Systems: Building Blocks for Iterative Methods, 2nd ed.} Philadelphia, SIAM.
+#' 
 #' @docType package
 #' @name Rlinsolve
 #' @import Matrix
 #' @import bigmemory
+#' @importFrom utils packageVersion
 #' @importFrom stats rnorm
 #' @importFrom Rcpp evalCpp
 #' @useDynLib Rlinsolve, .registration=TRUE
