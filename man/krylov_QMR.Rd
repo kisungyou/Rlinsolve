@@ -35,6 +35,7 @@ rather irregular convergence behavior. It adapts to solve the reduced tridiagona
 in a least squares sense and its convergence is known to be quite smoother than BiCG.
 }
 \examples{
+\dontrun{
 ## Overdetermined System
 A = matrix(rnorm(10*5),nrow=10)
 x = rnorm(5)
@@ -46,6 +47,7 @@ out3 = lsolve.qmr(A,b)
 matout = cbind(matrix(x),out1$x, out2$x, out3$x);
 colnames(matout) = c("true x","CG result", "BiCG result", "QMR result")
 print(matout)
+}
 
 }
 \references{
