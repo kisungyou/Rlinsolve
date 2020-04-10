@@ -4,8 +4,16 @@
 \alias{lsolve.sor}
 \title{Successive Over-Relaxation method}
 \usage{
-lsolve.sor(A, B, xinit = NA, reltol = 1e-05, maxiter = 1000, w = 1,
-  adjsym = TRUE, verbose = TRUE)
+lsolve.sor(
+  A,
+  B,
+  xinit = NA,
+  reltol = 1e-05,
+  maxiter = 1000,
+  w = 1,
+  adjsym = TRUE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{A}{an \eqn{(m\times n)} dense or sparse matrix. See also \code{\link[Matrix]{sparseMatrix}}.}

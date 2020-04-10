@@ -4,8 +4,15 @@
 \alias{lsolve.bicg}
 \title{Biconjugate Gradient method}
 \usage{
-lsolve.bicg(A, B, xinit = NA, reltol = 1e-05, maxiter = 10000,
-  preconditioner = diag(ncol(A)), verbose = TRUE)
+lsolve.bicg(
+  A,
+  B,
+  xinit = NA,
+  reltol = 1e-05,
+  maxiter = 10000,
+  preconditioner = diag(ncol(A)),
+  verbose = TRUE
+)
 }
 \arguments{
 \item{A}{an \eqn{(m\times n)} dense or sparse matrix. See also \code{\link[Matrix]{sparseMatrix}}.}

@@ -4,8 +4,16 @@
 \alias{lsolve.cg}
 \title{Conjugate Gradient method}
 \usage{
-lsolve.cg(A, B, xinit = NA, reltol = 1e-05, maxiter = 10000,
-  preconditioner = diag(ncol(A)), adjsym = TRUE, verbose = TRUE)
+lsolve.cg(
+  A,
+  B,
+  xinit = NA,
+  reltol = 1e-05,
+  maxiter = 10000,
+  preconditioner = diag(ncol(A)),
+  adjsym = TRUE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{A}{an \eqn{(m\times n)} dense or sparse matrix. See also \code{\link[Matrix]{sparseMatrix}}.}

@@ -7,7 +7,7 @@
 #' @param N the number of grid points for each direction.
 #' @param sparse a logical; \code{TRUE} for returning sparse matrix, \code{FALSE} otherwise.
 #'
-#' @return an \code{(N^2-by-N^2)} matrix having block banded structure.
+#' @return an \eqn{(N^2 \times N^2)} matrix having block banded structure.
 #' @examples
 #' ## generate dense and sparse Poisson matrix of size 25 by 25.
 #' A = aux.fisch(5, sparse=FALSE)

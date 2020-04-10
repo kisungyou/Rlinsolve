@@ -4,9 +4,16 @@
 \alias{lsolve.gmres}
 \title{Generalized Minimal Residual method}
 \usage{
-lsolve.gmres(A, B, xinit = NA, reltol = 1e-05, maxiter = 1000,
-  preconditioner = diag(ncol(A)), restart = (ncol(A) - 1),
-  verbose = TRUE)
+lsolve.gmres(
+  A,
+  B,
+  xinit = NA,
+  reltol = 1e-05,
+  maxiter = 1000,
+  preconditioner = diag(ncol(A)),
+  restart = (ncol(A) - 1),
+  verbose = TRUE
+)
 }
 \arguments{
 \item{A}{an \eqn{(m\times n)} dense or sparse matrix. See also \code{\link[Matrix]{sparseMatrix}}.}

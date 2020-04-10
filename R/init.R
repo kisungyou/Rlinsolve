@@ -10,12 +10,15 @@
   this.version = packageVersion("Rlinsolve")
 
   ## Print on Screen
+  packageStartupMessage("** ------------------------------------------------------- **")
   packageStartupMessage("** Rlinsolve")
   packageStartupMessage("**  - Solving (Sparse) System of Linear Equations")
-  packageStartupMessage("** Version    : ",this.version," (",this.year,")",sep="")
-  packageStartupMessage("** Maintainer : Kisung You (kyou@nd.edu)")
+  packageStartupMessage("**")
+  packageStartupMessage("** Version    : ",this.version,"      (",this.year,")",sep="")
+  packageStartupMessage("** Maintainer : Kisung You (kyoustat@gmail.com)")
   packageStartupMessage("**")
   packageStartupMessage("** Please share any bugs or suggestions to the maintainer.")
+  packageStartupMessage("** ------------------------------------------------------- **")
 }
 
 .onUnload <- function(libpath) {

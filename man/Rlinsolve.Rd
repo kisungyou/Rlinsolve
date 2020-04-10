@@ -3,7 +3,6 @@
 \docType{package}
 \name{Rlinsolve}
 \alias{Rlinsolve}
-\alias{Rlinsolve-package}
 \title{A Collection of Iterative Solvers for (Sparse) Linear System of Equations}
 \description{
 Solving a system of linear equations is one of the most fundamental

@@ -4,8 +4,15 @@
 \alias{lsolve.gs}
 \title{Gauss-Seidel method}
 \usage{
-lsolve.gs(A, B, xinit = NA, reltol = 1e-05, maxiter = 1000,
-  adjsym = TRUE, verbose = TRUE)
+lsolve.gs(
+  A,
+  B,
+  xinit = NA,
+  reltol = 1e-05,
+  maxiter = 1000,
+  adjsym = TRUE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{A}{an \eqn{(m\times n)} dense or sparse matrix. See also \code{\link[Matrix]{sparseMatrix}}.}

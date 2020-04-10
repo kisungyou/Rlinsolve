@@ -12,7 +12,7 @@ aux.fisch(N, sparse = FALSE)
 \item{sparse}{a logical; \code{TRUE} for returning sparse matrix, \code{FALSE} otherwise.}
 }
 \value{
-an \code{(N^2-by-N^2)} matrix having block banded structure.
+an \eqn{(N^2 \times N^2)} matrix having block banded structure.
 }
 \description{
 Poisson equation is one of most well-known elliptic partial differential equations. In order to

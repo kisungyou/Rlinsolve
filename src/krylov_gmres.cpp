@@ -1,4 +1,6 @@
+#define ARMA_DONT_PRINT_ERRORS
 #include "RcppArmadillo.h"
+
 // [[Rcpp::depends(RcppArmadillo)]]
 
 using namespace Rcpp;
@@ -10,13 +12,13 @@ arma::vec rotmat(double a, double b){
   if (b==0.0){
     c = 1.0;
     s = 0.0;
-  } else if (pow(b,2)>pow(a,2)){
+  } else if (std::pow(b,2.0)>std::pow(a,2.0)){
     temp = a/b;
-    s = 1.0/sqrt(1.0+pow(temp,2));
+    s = 1.0/std::sqrt(static_cast<float>(1.0+std::pow(temp,2)));
     c = temp*s;
   } else {
     temp = b/a;
-    c = 1.0/sqrt(1.0+pow(temp,2));
+    c = 1.0/std::sqrt(static_cast<float>(1.0+std::pow(temp,2.0)));
     s = temp*c;
   }
   arma::vec res(2,fill::zeros);
@@ -68,7 +70,6 @@ Rcpp::List single_gmres(const arma::mat& A, const arma::colvec& b, arma::colvec&
   arma::colvec y(m,fill::zeros);
 
   // 4. main iteration
-
   arma::vec errors(maxiter,fill::zeros);
   errors(0) = error;
   while (iter<maxiter){
