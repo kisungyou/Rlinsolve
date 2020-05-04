@@ -16,8 +16,7 @@ License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Imports: Rcpp (>= 0.12.4), Matrix, Rdpack, utils
-LinkingTo: bigmemory, BH, Rcpp, RcppArmadillo
-Depends: R (>= 3.3.0), bigmemory
+LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 7.1.0
 RdMacros: Rdpack
 NeedsCompilation: yes

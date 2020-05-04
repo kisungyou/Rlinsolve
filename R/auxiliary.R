@@ -1,8 +1,24 @@
 
 # Auxiliary Functions -----------------------------------------------------
 # Aux 1:: aux.is.dd(w/ doc) : check if diagonally dominant
-# Aux 2:: aux.is.psd : check positive semidefinite
+# Aux 2:: aux.is.psd    : check positive semidefinite
+# Aux 3:: aux.is.sparse : sparseformats = c("dgCMatrix","dtCMatrix","dsCMatrix")
 
+
+
+#   -----------------------------------------------------------------------
+# Aux 3:: aux.is.sparse : check whether one of the following
+#' @keywords internal
+#' @noRd
+aux.is.sparse <- function(AA){
+  sparseformats = c("dgCMatrix","dtCMatrix","dsCMatrix")
+  for (i in 1:3){
+    if (inherits(AA, sparseformats[i])){
+      return(TRUE)
+    }
+  }
+  return(FALSE)
+}
 
 #  ------------------------------------------------------------------------
 # Aux 1:: aux.is.dd

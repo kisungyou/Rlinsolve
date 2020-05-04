@@ -50,6 +50,7 @@ with fast computability for inverse, though it is not limited until the solver l
 }
 \examples{
 ## Overdetermined System
+set.seed(100)
 A = matrix(rnorm(10*5),nrow=10)
 x = rnorm(5)
 b = A\%*\%x

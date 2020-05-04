@@ -24,6 +24,7 @@
 #'
 #' @examples
 #' ## Overdetermined System
+#' set.seed(100)
 #' A = matrix(rnorm(10*5),nrow=10)
 #' x = rnorm(5)
 #' b = A%*%x
@@ -45,9 +46,9 @@ lsolve.gs <- function(A,B,xinit=NA,reltol=1e-5,maxiter=1000,adjsym=TRUE,verbose=
   # Preprocessing : sparsity
   # http://dirk.eddelbuettel.com/tmp/RcppArmadillo-sparseMatrix.pdf
   sparseformats = c("dgCMatrix","dtCMatrix","dsCMatrix")
-  if ((class(A)%in%sparseformats)||(class(B)%in%sparseformats)){
-    A = Matrix(A,sparse=TRUE)
-    B = Matrix(B,sparse=TRUE)
+  if (aux.is.sparse(A)||aux.is.sparse(B)){
+    A = Matrix::Matrix(A,sparse=TRUE)
+    B = Matrix::Matrix(B,sparse=TRUE)
     sparseflag = TRUE
   } else {
     A = matrix(A,nrow=nrow(A))

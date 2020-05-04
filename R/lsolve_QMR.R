@@ -21,6 +21,7 @@
 #' @examples
 #' \dontrun{
 #' ## Overdetermined System
+#' set.seed(100)
 #' A = matrix(rnorm(10*5),nrow=10)
 #' x = rnorm(5)
 #' b = A%*%x
@@ -49,7 +50,7 @@ lsolve.qmr <- function(A,B,xinit=NA,reltol=1e-5,maxiter=1000,
     stop("* lsolve.qmr : no NA or Inf values allowed.")
   }
   sparseformats = c("dgCMatrix","dtCMatrix","dsCMatrix")
-  if ((class(A)%in%sparseformats)||(class(B)%in%sparseformats)||(class(preconditioner)%in%sparseformats)){
+  if (aux.is.sparse(A)||aux.is.sparse(B)||aux.is.sparse(preconditioner)){
     A = Matrix(A,sparse=TRUE)
     B = Matrix(B,sparse=TRUE)
     preconditioner = Matrix(preconditioner,sparse=TRUE)
