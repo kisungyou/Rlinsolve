@@ -15,7 +15,7 @@ Description: Solving a system of linear equations is one of the most fundamental
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-Imports: Rcpp (>= 0.12.4), Matrix, Rdpack, utils
+Imports: Rcpp (>= 0.12.4), Matrix, Rdpack, stats, utils
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 7.1.0
 RdMacros: Rdpack
