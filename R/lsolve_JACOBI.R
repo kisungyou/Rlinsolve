@@ -22,6 +22,7 @@
 #' }
 #'
 #' @examples
+#' \donttest{
 #' ## Overdetermined System
 #' set.seed(100)
 #' A = matrix(rnorm(10*5),nrow=10)
@@ -35,6 +36,7 @@
 #' print(paste("*   error for unweighted    Jacobi case : ",norm(out1$x-x)))
 #' print(paste("*   error for 0.66 weighted Jacobi case : ",norm(out2$x-x)))
 #' print(paste("*   error for 0.50 weighted Jacobi case : ",norm(out3$x-x)))
+#' }
 #'
 #' @references
 #' \insertRef{demmel_applied_1997}{Rlinsolve}
@@ -50,7 +52,7 @@ lsolve.jacobi <- function(A,B,xinit=NA,reltol=1e-5,
     stop("* lsolve.jacobi : no NA or Inf values allowed.")
   }
   # Preprocessing : sparsity
-  # http://dirk.eddelbuettel.com/tmp/RcppArmadillo-sparseMatrix.pdf
+  # https://dirk.eddelbuettel.com/tmp/RcppArmadillo-sparseMatrix.pdf
   sparseformats = c("dgCMatrix","dtCMatrix","dsCMatrix")
   if (aux.is.sparse(A)||aux.is.sparse(B)){
     A = Matrix(A,sparse=TRUE)

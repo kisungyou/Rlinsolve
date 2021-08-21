@@ -19,6 +19,7 @@
 #' }
 #'
 #' @examples
+#' \donttest{
 #' ## Overdetermined System
 #' set.seed(100)
 #' A = matrix(rnorm(10*5),nrow=10)
@@ -32,11 +33,10 @@
 #' matout = cbind(matrix(x),out1$x, out3_1$x, out3_2$x, out3_3$x);
 #' colnames(matout) = c("true x","CG", "GMRES(2)", "GMRES(3)", "GMRES(4)")
 #' print(matout)
-#'
+#' }
 #'
 #' @references
 #' \insertRef{saad_gmres:_1986}{Rlinsolve}
-#'
 #'
 #' @rdname krylov_GMRES
 #' @export

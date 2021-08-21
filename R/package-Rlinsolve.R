@@ -55,6 +55,7 @@
 #' @docType package
 #' @name Rlinsolve
 #' @import Matrix
+#' @import Rdpack
 #' @importFrom utils packageVersion
 #' @importFrom stats rnorm
 #' @importFrom Rcpp evalCpp

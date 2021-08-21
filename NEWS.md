@@ -1,3 +1,7 @@
+# Rlinsolve 0.3.2
+
+* Fixed CRAN error.
+
 # Rlinsolve 0.3.1
 
 * Added a `NEWS.md` file to track changes to the package.

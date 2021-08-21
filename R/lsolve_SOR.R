@@ -24,6 +24,7 @@
 #' }
 #'
 #' @examples
+#' \donttest{
 #' ## Overdetermined System
 #' set.seed(100)
 #' A = matrix(rnorm(10*5),nrow=10)
@@ -36,6 +37,7 @@
 #' matout = cbind(matrix(x),out1$x, out2$x, out3$x);
 #' colnames(matout) = c("true x","SOR 1 = GS", "SOR w=0.5", "SOR w=1.5")
 #' print(matout)
+#' }
 #'
 #' @references
 #' \insertRef{demmel_applied_1997}{Rlinsolve}
@@ -50,7 +52,7 @@ lsolve.sor <- function(A,B,xinit=NA,reltol=1e-5,maxiter=1000,w=1,adjsym=TRUE,ver
     stop("* lsolve.sor : no NA or Inf values allowed.")
   }
   # Preprocessing : sparsity
-  # http://dirk.eddelbuettel.com/tmp/RcppArmadillo-sparseMatrix.pdf
+  # https://dirk.eddelbuettel.com/tmp/RcppArmadillo-sparseMatrix.pdf
   sparseformats = c("dgCMatrix","dtCMatrix","dsCMatrix")
   if (aux.is.sparse(A)||aux.is.sparse(B)){
     A = Matrix(A,sparse=TRUE)

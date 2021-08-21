@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // single_bicg
 Rcpp::List single_bicg(const arma::mat& A, const arma::colvec& b, arma::colvec& xinit, const double reltol, const int maxiter, const arma::mat& M);
 RcppExport SEXP _Rlinsolve_single_bicg(SEXP ASEXP, SEXP bSEXP, SEXP xinitSEXP, SEXP reltolSEXP, SEXP maxiterSEXP, SEXP MSEXP) {
