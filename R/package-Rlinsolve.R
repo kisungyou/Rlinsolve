@@ -54,6 +54,7 @@
 #' 
 #' @docType package
 #' @name Rlinsolve
+#' @aliases Rlinsolve-package
 #' @import Matrix
 #' @import Rdpack
 #' @importFrom utils packageVersion

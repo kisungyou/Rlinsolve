@@ -44,6 +44,7 @@ GMRES is a generic iterative solver for a nonsymmetric system of linear equation
 the solution using Krylov vectors with minimal residuals.
 }
 \examples{
+\donttest{
 ## Overdetermined System
 set.seed(100)
 A = matrix(rnorm(10*5),nrow=10)
@@ -57,7 +58,7 @@ out3_3 = lsolve.gmres(A,b,restart=4)
 matout = cbind(matrix(x),out1$x, out3_1$x, out3_2$x, out3_3$x);
 colnames(matout) = c("true x","CG", "GMRES(2)", "GMRES(3)", "GMRES(4)")
 print(matout)
-
+}
 
 }
 \references{

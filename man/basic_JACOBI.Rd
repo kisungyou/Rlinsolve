@@ -47,6 +47,7 @@ it is automatically transformed to the normal equation. Underdetermined system -
 \code{nrow(A)<ncol(A)} - is not supported.
 }
 \examples{
+\donttest{
 ## Overdetermined System
 set.seed(100)
 A = matrix(rnorm(10*5),nrow=10)
@@ -60,6 +61,7 @@ print("* lsolve.jacobi : overdetermined case example")
 print(paste("*   error for unweighted    Jacobi case : ",norm(out1$x-x)))
 print(paste("*   error for 0.66 weighted Jacobi case : ",norm(out2$x-x)))
 print(paste("*   error for 0.50 weighted Jacobi case : ",norm(out3$x-x)))
+}
 
 }
 \references{

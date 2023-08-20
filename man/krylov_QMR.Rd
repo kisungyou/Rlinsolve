@@ -42,7 +42,7 @@ rather irregular convergence behavior. It adapts to solve the reduced tridiagona
 in a least squares sense and its convergence is known to be quite smoother than BiCG.
 }
 \examples{
-\dontrun{
+\donttest{
 ## Overdetermined System
 set.seed(100)
 A = matrix(rnorm(10*5),nrow=10)

@@ -49,6 +49,7 @@ it is automatically transformed to the normal equation. Underdetermined system -
 \code{nrow(A)<ncol(A)} - is not supported.
 }
 \examples{
+\donttest{
 ## Overdetermined System
 set.seed(100)
 A = matrix(rnorm(10*5),nrow=10)
@@ -61,6 +62,7 @@ out3 = lsolve.sor(A,b,w=1.5)
 matout = cbind(matrix(x),out1$x, out2$x, out3$x);
 colnames(matout) = c("true x","SOR 1 = GS", "SOR w=0.5", "SOR w=1.5")
 print(matout)
+}
 
 }
 \references{

@@ -46,6 +46,7 @@ it is automatically transformed to the normal equation. Underdetermined system -
 \code{nrow(A)<ncol(A)} - is not supported.
 }
 \examples{
+\donttest{
 ## Overdetermined System
 set.seed(100)
 A = matrix(rnorm(10*5),nrow=10)
@@ -55,6 +56,7 @@ b = A\%*\%x
 out = lsolve.gs(A,b)
 matout = cbind(matrix(x),out$x); colnames(matout) = c("true x","est from GS")
 print(matout)
+}
 
 }
 \references{
