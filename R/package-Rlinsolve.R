@@ -52,7 +52,7 @@
 #' Eijkhout, V., Pozo, R., Romine, C., and van der Vorst, H. (1994) \emph{Templates for the Solution
 #' of Linear Systems: Building Blocks for Iterative Methods, 2nd ed.} Philadelphia, SIAM.
 #' 
-#' @docType package
+#' @noRd
 #' @name Rlinsolve
 #' @aliases Rlinsolve-package
 #' @import Matrix

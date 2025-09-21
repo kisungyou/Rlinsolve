@@ -2,7 +2,7 @@
 #'
 #' Successive Over-Relaxation(SOR) method is a variant of Gauss-Seidel method for solving a system of linear equations,
 #' with a decomposition \eqn{A = D+L+U} where \eqn{D} is a diagonal matrix and
-#' \eqn{L} and {U} are strictly lower/upper triangular matrix respectively.
+#' \eqn{L} and \eqn{U} are strictly lower/upper triangular matrix respectively.
 #' For a square matrix \eqn{A}, it is required to be diagonally dominant or symmetric and positive definite like GS method.
 #' For an overdetermined system where \code{nrow(A)>ncol(A)},
 #' it is automatically transformed to the normal equation. Underdetermined system -
